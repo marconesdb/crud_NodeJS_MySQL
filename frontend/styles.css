@@ -1,0 +1,99 @@
+/* Define o estilo padrão para o corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #302f2f;
+}
+
+/* Define o estilo para o contêiner principal */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Define o estilo para o título */
+h1 {
+  text-align: center;
+}
+
+/* Define o estilo para o formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Define o estilo para os campos de entrada e botões do formulário */
+form input, form button {
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* Define o estilo para a barra de pesquisa */
+#search {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Define o estilo para a área de registros */
+#registros {
+  margin-top: 20px;
+}
+
+/* Define o estilo para cada registro de cliente */
+.registro {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Define o estilo para os parágrafos dentro de cada registro */
+.registro p {
+  margin: 5px 0;
+}
+
+/* Define o estilo para os botões dentro de cada registro */
+.registro button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Define o estilo para os botões ao serem "hovered" (passar o mouse por cima) */
+.registro button:hover {
+  background-color: #0056b3;
+}
+
+
+.btnCancelar{
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.btnSalvar{
+  background-color: red;
+  color: #fff;
+}
+
+.search{
+  margin-top: 20px;
+}
+
+.btnPesquisar{
+  background-color: rgb(57, 141, 57);
+  color: #fff;
+}
+
+#pesquisa{
+  width: 300px;
+}
