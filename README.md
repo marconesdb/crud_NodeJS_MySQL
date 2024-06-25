@@ -49,7 +49,7 @@ Este projeto implementa um sistema completo para gerenciamento de clientes, comp
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/marconesdb/crud_NodeJs_MySQL.git
+   git clone https://github.com/marconesdb/crud_NodeJS_MySQL.git
    cd crud_NodeJs_MySQL
    ```
 
