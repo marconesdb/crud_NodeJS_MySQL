@@ -1,3 +1,7 @@
+Claro, aqui está o arquivo README.md atualizado com as rotas (endpoints) utilizadas para teste no Postman:
+
+---
+
 # Sistema de Gerenciamento de Clientes
 
 ## Descrição
@@ -12,7 +16,7 @@ Este projeto implementa um sistema completo para gerenciamento de clientes, comp
   - Gerencia interações do usuário (envio de formulários, etc.).
   - Faz requisições HTTP para o servidor Node.js usando a Fetch API.
   - Atualiza dinamicamente a página sem recarregar.
--  **Tailwind CSS**: Framework CSS utilitário para criar designs personalizados sem sair do HTML.
+- **Tailwind CSS**: Framework CSS utilitário para criar designs personalizados sem sair do HTML.
 
 ### Back-end
 - **Node.js (app.js)**:
@@ -46,7 +50,7 @@ Este projeto implementa um sistema completo para gerenciamento de clientes, comp
 1. **Clone o repositório:**
    ```bash
    git clone https://github.com/marconesdb/crud_NodeJs_MySQL.git
-   cd [pasta_do_projeto](https://github.com/marconesdb/crud_NodeJs_MySQL.git)
+   cd crud_NodeJs_MySQL
    ```
 
 2. **Comandos utilizados para instalar as dependências:**
@@ -57,13 +61,12 @@ Este projeto implementa um sistema completo para gerenciamento de clientes, comp
 
    ```bash
    npm install express mysql2 body-parser cors
-
    ```
 
 3. **Rode o servidor Node.js:**
    ```bash
-   Vai até a pasta backend com o comando: cd backend
-   Inicia o servidor com o comando: node index.js
+   cd backend
+   node index.js
    ```
 
 4. **Acesse a aplicação em:** [http://localhost:3000](http://localhost:3000).
@@ -82,7 +85,7 @@ Este projeto implementa um sistema completo para gerenciamento de clientes, comp
    );
    ```
 
-6. **Configure a senha do seu banco de dados no arquivo scripts.js:**
+6. **Configure a senha do seu banco de dados no arquivo `index.js`:**
    ```javascript
    const db = mysql.createConnection({
      host: 'localhost',
@@ -91,6 +94,52 @@ Este projeto implementa um sistema completo para gerenciamento de clientes, comp
      database: 'nome_do_seu_banco_de_dados'
    });
    ```
+
+## Testando Endpoints com Postman
+
+### 1. Listar Todos os Clientes
+- **Método:** GET
+- **URL:** `http://localhost:3000/cliente`
+
+### 2. Buscar um Cliente pelo ID
+- **Método:** GET
+- **URL:** `http://localhost:3000/cliente/:id` (substitua `:id` pelo ID do cliente)
+
+### 3. Buscar Clientes pelo Nome
+- **Método:** GET
+- **URL:** `http://localhost:3000/clientes?nome=John` (substitua `John` pelo nome do cliente)
+
+### 4. Adicionar um Novo Cliente
+- **Método:** POST
+- **URL:** `http://localhost:3000/cliente`
+- **Corpo (Body):**
+  ```json
+  {
+    "nome": "John Doe",
+    "endereco": "123 Main St",
+    "telefone": "1234567890",
+    "email": "john.doe@example.com",
+    "cpf": "123.456.789-00"
+  }
+  ```
+
+### 5. Atualizar um Cliente Existente
+- **Método:** PUT
+- **URL:** `http://localhost:3000/cliente/:id` (substitua `:id` pelo ID do cliente)
+- **Corpo (Body):**
+  ```json
+  {
+    "nome": "Jane Doe",
+    "endereco": "456 Elm St",
+    "telefone": "0987654321",
+    "email": "jane.doe@example.com",
+    "cpf": "987.654.321-00"
+  }
+  ```
+
+### 6. Excluir um Cliente
+- **Método:** DELETE
+- **URL:** `http://localhost:3000/cliente/:id` (substitua `:id` pelo ID do cliente)
 
 ## Observações
 
@@ -104,3 +153,7 @@ Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE par
 ---
 
 Feito com 💻 e ☕ por [Marcone Silva de Brito](https://github.com/marconesdb).
+
+---
+
+Com essas informações, você deve conseguir testar todas as rotas da API utilizando o Postman.
